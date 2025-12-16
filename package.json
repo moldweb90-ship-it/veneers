@@ -10,6 +10,9 @@
   "keywords": ["dental", "landing", "vinirы"],
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.9.8"
+  },
   "devDependencies": {
     "http-server": "^14.1.1"
   }
