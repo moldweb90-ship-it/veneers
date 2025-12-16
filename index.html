@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" id="meta-description" content="Виниры Кишинев, керамические виниры, стоматология эстетическая. LIFE DENTAL - премиум виниры E-max, без боли, гарантия качества. Запись на консультацию.">
-    <title id="page-title">LIFE DENTAL | Виниры Кишинев - Керамические виниры E-max | Стоматология</title>
+    <title>LIFE DENTAL | Виниры Кишинев</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="/favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon_io/android-chrome-512x512.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -43,7 +42,6 @@
                     },
                     animation: {
                         'pulse-fast': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'pulse-slow': 'pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                         'float': 'float 4s ease-in-out infinite',
                         'marquee': 'marquee 15s linear infinite',
                     },
@@ -55,14 +53,6 @@
                         marquee: {
                             '0%': { transform: 'translateX(0%)' },
                             '100%': { transform: 'translateX(-100%)' },
-                        },
-                        'pulse-slow': {
-                            '0%, 100%': { opacity: '0.15' },
-                            '50%': { opacity: '0.25' },
-                        },
-                        'pulse-slow': {
-                            '0%, 100%': { opacity: '0.15' },
-                            '50%': { opacity: '0.25' },
                         }
                     }
                 }
@@ -143,52 +133,6 @@
 
         input:focus {
             box-shadow: 0 0 0 2px rgba(0, 243, 255, 0.3);
-        }
-
-        /* Mobile styles - только для телефонов (до 768px) */
-        @media (max-width: 768px) {
-            section.py-32,
-            .py-32 {
-                padding-top: 4rem !important;
-                padding-bottom: 0rem !important;
-            }
-
-            .min-h-screen {
-                min-height: 80vh !important;
-            }
-
-            .mb-20 {
-                margin-bottom: 2rem !important;
-            }
-
-            section.py-20,
-            .py-20 {
-                padding-top: 5rem !important;
-                padding-bottom: 0rem !important;
-            }
-
-            .mb-16 {
-                margin-bottom: 2rem !important;
-            }
-
-            .pb-12 {
-                padding-bottom: 1rem !important;
-            }
-
-            .mt-8 {
-                margin-top: 0rem !important;
-                margin-bottom: 2rem !important;
-            }
-
-            section.py-24,
-            .py-24 {
-                padding-top: 4rem !important;
-                padding-bottom: 2rem !important;
-            }
-
-            .pt-32 {
-                padding-top: 4rem !important;
-            }
         }
     </style>
 </head>
@@ -290,14 +234,12 @@
                 </div>
             </div>
             <div class="hidden md:block relative reveal delay-200">
-                <div class="absolute inset-0 bg-neon-blue opacity-20 blur-[120px] rounded-full animate-pulse-slow"></div>
-                <div class="relative rounded-[3rem] overflow-hidden border border-neon-blue/30 shadow-[0_0_60px_rgba(0,243,255,0.2)] transform hover:scale-[1.02] hover:shadow-[0_0_80px_rgba(0,243,255,0.4)] transition-all duration-700 group/image">
-                    <div class="absolute inset-0 bg-gradient-to-br from-neon-blue/10 via-transparent to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-700 z-10"></div>
-                    <img src="images/home.png" alt="Perfect Smile" class="w-full h-auto object-cover brightness-90 group-hover/image:brightness-100 transition-all duration-700 relative z-0">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60 group-hover/image:opacity-40 transition-opacity duration-700"></div>
+                <div class="absolute inset-0 bg-neon-blue opacity-20 blur-[100px] rounded-full"></div>
+                <div class="relative rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl transform hover:scale-[1.02] transition-transform duration-700">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1000&auto=format&fit=crop" alt="Perfect Smile" class="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700">
                 </div>
-                <div class="absolute -bottom-8 -left-8 bg-[#0a0a0a] p-6 border border-neon-blue/20 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-[2rem] animate-float flex items-center gap-4 backdrop-blur-sm z-20">
-                    <div class="w-12 h-12 rounded-full bg-neon-blue flex items-center justify-center text-black text-xl shadow-[0_0_20px_rgba(0,243,255,0.5)]">
+                <div class="absolute -bottom-8 -left-8 bg-[#0a0a0a] p-6 border border-neon-blue/20 shadow-[0_10px_40px_rgba(0,0,0,0.5)] rounded-[2rem] animate-float flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-neon-blue flex items-center justify-center text-black text-xl">
                         <i class="fa-solid fa-check"></i>
                     </div>
                     <div>
@@ -394,8 +336,8 @@
                     <!-- Video 1 -->
                     <div class="snap-center shrink-0 w-[85vw] md:w-[400px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
                         <div class="relative w-full" style="aspect-ratio: 9/16;">
-                            <video class="w-full h-full object-cover" preload="metadata" data-video-src="videorew/791611890.mp4">
-                                <source src="videorew/791611890.mp4" type="video/mp4">
+                            <video class="w-full h-full object-cover" preload="metadata" data-video-src="/videorew/791611890.mp4">
+                                <source src="/videorew/791611890.mp4" type="video/mp4">
                             </video>
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex items-center justify-center">
                                 <button onclick="playVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue">
@@ -407,8 +349,8 @@
                     <!-- Video 2 -->
                     <div class="snap-center shrink-0 w-[85vw] md:w-[400px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
                         <div class="relative w-full" style="aspect-ratio: 9/16;">
-                            <video class="w-full h-full object-cover" preload="metadata" data-video-src="videorew/791612489.mp4">
-                                <source src="videorew/791612489.mp4" type="video/mp4">
+                            <video class="w-full h-full object-cover" preload="metadata" data-video-src="/videorew/791612489.mp4">
+                                <source src="/videorew/791612489.mp4" type="video/mp4">
                             </video>
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex items-center justify-center">
                                 <button onclick="playVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue">
@@ -420,8 +362,8 @@
                     <!-- Video 3 -->
                     <div class="snap-center shrink-0 w-[85vw] md:w-[400px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
                         <div class="relative w-full" style="aspect-ratio: 9/16;">
-                            <video class="w-full h-full object-cover" preload="metadata" data-video-src="videorew/791647724.mp4">
-                                <source src="videorew/791647724.mp4" type="video/mp4">
+                            <video class="w-full h-full object-cover" preload="metadata" data-video-src="/videorew/791647724.mp4">
+                                <source src="/videorew/791647724.mp4" type="video/mp4">
                             </video>
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex items-center justify-center">
                                 <button onclick="playVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue">
@@ -433,8 +375,8 @@
                     <!-- Video 4 -->
                     <div class="snap-center shrink-0 w-[85vw] md:w-[400px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
                         <div class="relative w-full" style="aspect-ratio: 9/16;">
-                            <video class="w-full h-full object-cover" preload="metadata" data-video-src="videorew/791695137.mp4">
-                                <source src="videorew/791695137.mp4" type="video/mp4">
+                            <video class="w-full h-full object-cover" preload="metadata" data-video-src="/videorew/791695137.mp4">
+                                <source src="/videorew/791695137.mp4" type="video/mp4">
                             </video>
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex items-center justify-center">
                                 <button onclick="playVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue">
@@ -446,8 +388,8 @@
                     <!-- Video 5 -->
                     <div class="snap-center shrink-0 w-[85vw] md:w-[400px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
                         <div class="relative w-full" style="aspect-ratio: 9/16;">
-                            <video class="w-full h-full object-cover" preload="metadata" data-video-src="videorew/791705607.mp4">
-                                <source src="videorew/791705607.mp4" type="video/mp4">
+                            <video class="w-full h-full object-cover" preload="metadata" data-video-src="/videorew/791705607.mp4">
+                                <source src="/videorew/791705607.mp4" type="video/mp4">
                             </video>
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex items-center justify-center">
                                 <button onclick="playVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue">
@@ -549,77 +491,51 @@
         <div class="container mx-auto px-6">
             <h2 class="text-4xl md:text-6xl font-display font-bold mb-16 text-center reveal" data-i18n="works_title">ДО И ПОСЛЕ</h2>
             <div class="relative group reveal">
-                <div id="carousel" class="flex overflow-x-auto gap-6 before-after-slider snap-x snap-mandatory pb-12 px-4">
-                     <!-- Video 1 -->
-                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
-                        <video class="w-full h-full object-cover" preload="metadata" data-video-src="videoDOposle/IMG_2540.MP4">
-                            <source src="videoDOposle/IMG_2540.MP4" type="video/mp4">
-                        </video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex items-center justify-center">
-                            <button onclick="playBeforeAfterVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-                                <i class="fa-solid fa-play"></i>
-                            </button>
+                <div id="carousel" class="flex overflow-x-auto gap-8 before-after-slider snap-x snap-mandatory pb-12 px-4">
+                     <!-- Slide 1 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/slide">
+                        <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover/slide:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-10 pt-20">
+                            <span class="text-neon-blue font-bold font-display uppercase tracking-widest text-sm">Керамические виниры (10 ед.)</span>
+                            <p class="text-gray-400 text-xs mt-2">Цвет Bleach 2, форма Soft</p>
                         </div>
                     </div>
-                    <!-- Video 2 -->
-                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
-                        <video class="w-full h-full object-cover" preload="metadata" data-video-src="videoDOposle/IMG_4348.MP4">
-                            <source src="videoDOposle/IMG_4348.MP4" type="video/mp4">
-                        </video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex items-center justify-center">
-                            <button onclick="playBeforeAfterVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-                                <i class="fa-solid fa-play"></i>
-                            </button>
+                    <!-- Slide 2 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/slide">
+                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover/slide:scale-105 transition-transform duration-700">
+                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-10 pt-20">
+                            <span class="text-neon-blue font-bold font-display uppercase tracking-widest text-sm">Композитная реставрация</span>
+                            <p class="text-gray-400 text-xs mt-2">Восстановление передних резцов</p>
                         </div>
                     </div>
-                    <!-- Video 3 -->
-                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
-                        <video class="w-full h-full object-cover" preload="metadata" data-video-src="videoDOposle/IMG_4708.MP4">
-                            <source src="videoDOposle/IMG_4708.MP4" type="video/mp4">
-                        </video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex items-center justify-center">
-                            <button onclick="playBeforeAfterVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-                                <i class="fa-solid fa-play"></i>
-                            </button>
+                    <!-- Slide 3 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/slide">
+                        <img src="https://images.unsplash.com/photo-1609607847926-6b95cf78b1d2?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover/slide:scale-105 transition-transform duration-700">
+                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-10 pt-20">
+                            <span class="text-neon-blue font-bold font-display uppercase tracking-widest text-sm">Тотальное преображение</span>
+                            <p class="text-gray-400 text-xs mt-2">E-max виниры, верхняя и нижняя челюсть</p>
                         </div>
                     </div>
-                    <!-- Video 4 -->
-                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
-                        <video class="w-full h-full object-cover" preload="metadata" data-video-src="videoDOposle/IMG_5316.MP4">
-                            <source src="videoDOposle/IMG_5316.MP4" type="video/mp4">
-                        </video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex items-center justify-center">
-                            <button onclick="playBeforeAfterVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-                                <i class="fa-solid fa-play"></i>
-                            </button>
+                    <!-- Slide 4 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/slide">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover/slide:scale-105 transition-transform duration-700">
+                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-10 pt-20">
+                            <span class="text-neon-blue font-bold font-display uppercase tracking-widest text-sm">Голливудская улыбка</span>
+                            <p class="text-gray-400 text-xs mt-2">Керамика E-max, 20 единиц</p>
                         </div>
                     </div>
-                    <!-- Video 5 -->
-                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
-                        <video class="w-full h-full object-cover" preload="metadata" data-video-src="videoDOposle/IMG_5430.MP4">
-                            <source src="videoDOposle/IMG_5430.MP4" type="video/mp4">
-                        </video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex items-center justify-center">
-                            <button onclick="playBeforeAfterVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-                                <i class="fa-solid fa-play"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Video 6 -->
-                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/video bg-black">
-                        <video class="w-full h-full object-cover" preload="metadata" data-video-src="videoDOposle/IMG_6827.MOV">
-                            <source src="videoDOposle/IMG_6827.MOV" type="video/quicktime">
-                        </video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent flex items-center justify-center">
-                            <button onclick="playBeforeAfterVideo(this)" class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-4xl pl-2 hover:scale-110 hover:bg-neon-blue hover:text-black transition-all duration-300 border-2 border-white/30 group-hover/video:border-neon-blue shadow-[0_0_30px_rgba(0,0,0,0.5)]">
-                                <i class="fa-solid fa-play"></i>
-                            </button>
+                    <!-- Slide 5 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[450px] relative rounded-[3rem] overflow-hidden border border-white/10 group/slide">
+                        <img src="https://images.unsplash.com/photo-1620331317312-74b88bf40907?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover group-hover/slide:scale-105 transition-transform duration-700">
+                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-10 pt-20">
+                            <span class="text-neon-blue font-bold font-display uppercase tracking-widest text-sm">Исправление прикуса винирами</span>
+                            <p class="text-gray-400 text-xs mt-2">Без брекетов, за 2 недели</p>
                         </div>
                     </div>
                 </div>
                 <div class="flex justify-center gap-4 mt-4">
-                    <button onclick="scrollBeforeAfterCarousel('prev')" class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center hover:bg-neon-blue hover:text-black hover:border-neon-blue transition-all"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button onclick="scrollBeforeAfterCarousel('next')" class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center hover:bg-neon-blue hover:text-black hover:border-neon-blue transition-all"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button onclick="document.getElementById('carousel').scrollBy({left: -350, behavior: 'smooth'})" class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center hover:bg-neon-blue hover:text-black hover:border-neon-blue transition-all"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button onclick="document.getElementById('carousel').scrollBy({left: 350, behavior: 'smooth'})" class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center hover:bg-neon-blue hover:text-black hover:border-neon-blue transition-all"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -1045,7 +961,7 @@
             </button>
             <div class="relative w-full bg-black rounded-[3rem] overflow-hidden shadow-[0_0_100px_rgba(0,243,255,0.15)] border border-white/10" style="max-width: 400px; margin: 0 auto;">
                 <video id="modal-video" class="w-full h-auto rounded-[3rem]" controls autoplay playsinline style="display: block; max-height: 85vh;">
-                    <source src="video/791565850.mp4" type="video/mp4">
+                    <source src="/video/791565850.mp4" type="video/mp4">
                     Ваш браузер не поддерживает видео.
                 </video>
             </div>
@@ -1096,16 +1012,42 @@
             if (detectedLang) {
                 changeLang(detectedLang, false); // false = не обновлять URL при загрузке
             } else {
-                changeLang('ru', false); // Default - русский, без обновления URL
+                updateLangUI('ru'); // Default - русский
             }
             
             // Обработка кнопки "Назад" в браузере
             window.addEventListener('popstate', function(event) {
                 const lang = detectLangFromURL();
                 if (lang) {
-                    changeLang(lang, false); // false = не обновлять URL при popstate
+                    // Only update UI, don't change URL again
+                    document.querySelectorAll('[data-i18n]').forEach(el => {
+                        const key = el.getAttribute('data-i18n');
+                        if (translations[lang][key]) {
+                            el.innerHTML = translations[lang][key];
+                        }
+                    });
+                    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                        const key = el.getAttribute('data-i18n-placeholder');
+                        if (translations[lang][key]) {
+                            el.placeholder = translations[lang][key];
+                        }
+                    });
+                    updateLangUI(lang);
                 } else {
-                    changeLang('ru', false); // Reset to Russian, без обновления URL
+                    // Reset to Russian
+                    document.querySelectorAll('[data-i18n]').forEach(el => {
+                        const key = el.getAttribute('data-i18n');
+                        if (translations.ru[key]) {
+                            el.innerHTML = translations.ru[key];
+                        }
+                    });
+                    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                        const key = el.getAttribute('data-i18n-placeholder');
+                        if (translations.ru[key]) {
+                            el.placeholder = translations.ru[key];
+                        }
+                    });
+                    updateLangUI('ru');
                 }
             });
 
@@ -1186,8 +1128,6 @@
 
         const translations = {
             ru: {
-                seo_title: "LIFE DENTAL | Виниры Кишинев - Керамические виниры E-max | Стоматология эстетическая",
-                seo_description: "Виниры Кишинев, керамические виниры E-max, стоматология эстетическая. LIFE DENTAL - премиум виниры без боли, гарантия качества 15+ лет. Запись на консультацию в Ciocana.",
                 nav_why: "Почему мы", nav_steps: "Этапы", nav_price: "Цены", nav_tourism: "Туризм", nav_contacts: "Контакты", header_btn: "Записаться",
                 hero_badge: "НАМ 1 ГОД НА ЧЕКАНАХ",
                 hero_h1_1: "ХВАТИТ", hero_h1_hide: "ПРЯТАТЬ", hero_h1_2: "УЛЫБКУ.",
@@ -1250,8 +1190,6 @@
                 rev_25: "\"Немец по натуре, проверяю все до мелочей. Оборудование новее, чем в моей клинике в Берлине. Работа сделана на высшем уровне. Respect!\""
             },
             ro: {
-                seo_title: "LIFE DENTAL | Fațete Chișinău - Fațete Ceramice E-max | Stomatologie Estetică",
-                seo_description: "Fațete Chișinău, fațete ceramice E-max, stomatologie estetică. LIFE DENTAL - fațete premium fără durere, garanție calitate 15+ ani. Programare consultație în Ciocana.",
                 nav_why: "De ce noi", nav_steps: "Etape", nav_price: "Prețuri", nav_tourism: "Turism", nav_contacts: "Contacte", header_btn: "Programează-te",
                 hero_badge: "1 AN LA CIOCANA",
                 hero_h1_1: "NU-ȚI MAI", hero_h1_hide: "ASCUNDE", hero_h1_2: "ZÂMBETUL.",
@@ -1314,8 +1252,6 @@
                 rev_25: "\"Germân prin natură, verific tot în detaliu. Echipament mai nou decât în clinica mea din Berlin. Lucrarea e făcută la cel mai înalt nivel. Respect!\""
             },
             en: {
-                seo_title: "LIFE DENTAL | Veneers Chisinau - Ceramic E-max Veneers | Aesthetic Dentistry",
-                seo_description: "Veneers Chisinau, ceramic E-max veneers, aesthetic dentistry. LIFE DENTAL - premium veneers pain-free, quality guarantee 15+ years. Book consultation in Ciocana.",
                 nav_why: "Why Us", nav_steps: "Steps", nav_price: "Prices", nav_tourism: "Tourism", nav_contacts: "Contacts", header_btn: "Book Now",
                 hero_badge: "1 YEAR IN CIOCANA",
                 hero_h1_1: "STOP", hero_h1_hide: "HIDING", hero_h1_2: "YOUR SMILE.",
@@ -1428,21 +1364,6 @@
                     el.placeholder = translations[lang][key];
                 }
             });
-            
-            // Update SEO title and description
-            if (translations[lang].seo_title) {
-                document.title = translations[lang].seo_title;
-                const titleEl = document.getElementById('page-title');
-                if (titleEl) titleEl.textContent = translations[lang].seo_title;
-            }
-            if (translations[lang].seo_description) {
-                const metaDesc = document.getElementById('meta-description');
-                if (metaDesc) metaDesc.setAttribute('content', translations[lang].seo_description);
-            }
-            
-            // Update html lang attribute
-            document.documentElement.lang = lang;
-            
             updateLangUI(lang);
             if(isLangMenuOpen) toggleLangMenu();
             
@@ -1611,87 +1532,6 @@
                     video.controls = false;
                     overlay.style.display = 'flex';
                 }, { once: true });
-            }
-        }
-
-        // Play video function for Before/After carousel
-        function playBeforeAfterVideo(button) {
-            // Stop all other videos first
-            const carousel = document.getElementById('carousel');
-            if (carousel) {
-                const allVideos = carousel.querySelectorAll('video');
-                allVideos.forEach(video => {
-                    const videoContainer = video.closest('div[class*="snap-center"]');
-                    if (videoContainer !== button.closest('div[class*="snap-center"]')) {
-                        video.pause();
-                        video.currentTime = 0;
-                        video.controls = false;
-                        // Show play button again
-                        const overlay = videoContainer.querySelector('.absolute.inset-0');
-                        if (overlay) {
-                            overlay.style.display = 'flex';
-                        }
-                    }
-                });
-            }
-
-            const videoContainer = button.closest('div[class*="snap-center"]');
-            const video = videoContainer.querySelector('video');
-            const overlay = button.closest('.absolute.inset-0');
-            
-            if (video && overlay) {
-                // Hide play button and overlay
-                overlay.style.display = 'none';
-                
-                // Load and play video with sound
-                video.muted = false;
-                video.controls = true;
-                
-                // Ensure video is loaded
-                if (video.readyState === 0) {
-                    video.load();
-                }
-                
-                video.play().then(() => {
-                    // Video is playing
-                }).catch(e => {
-                    // If autoplay is blocked, try muted first
-                    video.muted = true;
-                    video.play().then(() => {
-                        video.muted = false;
-                    }).catch(err => {
-                        console.log('Video play failed:', err);
-                        overlay.style.display = 'flex';
-                    });
-                });
-
-                // Show overlay again when video ends
-                video.addEventListener('ended', function() {
-                    video.controls = false;
-                    video.currentTime = 0;
-                    overlay.style.display = 'flex';
-                }, { once: true });
-            }
-        }
-
-        // Scroll function for Before/After carousel
-        function scrollBeforeAfterCarousel(direction) {
-            const carousel = document.getElementById('carousel');
-            if (!carousel) return;
-            
-            const videos = carousel.querySelectorAll('div[class*="snap-center"]');
-            if (videos.length === 0) return;
-            
-            // Get visible video width + gap
-            const firstVideo = videos[0];
-            const videoWidth = firstVideo.offsetWidth;
-            const gap = 24; // gap-6 = 24px
-            const scrollAmount = videoWidth + gap;
-            
-            if (direction === 'next') {
-                carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-            } else {
-                carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
             }
         }
 
