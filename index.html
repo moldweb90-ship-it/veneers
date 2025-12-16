@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIFE DENTAL | Виниры Кишинев</title>
+    <meta name="description" id="meta-description" content="Виниры Кишинев, керамические виниры E-max, стоматология эстетическая. LIFE DENTAL - премиум виниры без боли, гарантия качества 15+ лет. Запись на консультацию в Ciocana.">
+    <title id="page-title">LIFE DENTAL | Виниры Кишинев - Керамические виниры E-max | Стоматология эстетическая</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon_io/favicon.ico">
@@ -1045,7 +1046,7 @@
             if (detectedLang) {
                 changeLang(detectedLang, false); // false = не обновлять URL при загрузке
             } else {
-                updateLangUI('ru'); // Default - русский
+                changeLang('ru', false); // Default - русский, без обновления URL
             }
             
             // Обработка кнопки "Назад" в браузере
@@ -1161,6 +1162,8 @@
 
         const translations = {
             ru: {
+                seo_title: "LIFE DENTAL | Виниры Кишинев - Керамические виниры E-max | Стоматология эстетическая",
+                seo_description: "Виниры Кишинев, керамические виниры E-max, стоматология эстетическая. LIFE DENTAL - премиум виниры без боли, гарантия качества 15+ лет. Запись на консультацию в Ciocana.",
                 nav_why: "Почему мы", nav_steps: "Этапы", nav_price: "Цены", nav_tourism: "Туризм", nav_contacts: "Контакты", header_btn: "Записаться",
                 hero_badge: "НАМ 1 ГОД НА ЧЕКАНАХ",
                 hero_h1_1: "ХВАТИТ", hero_h1_hide: "ПРЯТАТЬ", hero_h1_2: "УЛЫБКУ.",
@@ -1223,6 +1226,8 @@
                 rev_25: "\"Немец по натуре, проверяю все до мелочей. Оборудование новее, чем в моей клинике в Берлине. Работа сделана на высшем уровне. Respect!\""
             },
             ro: {
+                seo_title: "LIFE DENTAL | Fațete Chișinău - Fațete Ceramice E-max | Stomatologie Estetică",
+                seo_description: "Fațete Chișinău, fațete ceramice E-max, stomatologie estetică. LIFE DENTAL - fațete premium fără durere, garanție calitate 15+ ani. Programare consultație în Ciocana.",
                 nav_why: "De ce noi", nav_steps: "Etape", nav_price: "Prețuri", nav_tourism: "Turism", nav_contacts: "Contacte", header_btn: "Programează-te",
                 hero_badge: "1 AN LA CIOCANA",
                 hero_h1_1: "NU-ȚI MAI", hero_h1_hide: "ASCUNDE", hero_h1_2: "ZÂMBETUL.",
@@ -1397,6 +1402,21 @@
                     el.placeholder = translations[lang][key];
                 }
             });
+            
+            // Update SEO title and description
+            if (translations[lang].seo_title) {
+                document.title = translations[lang].seo_title;
+                const titleEl = document.getElementById('page-title');
+                if (titleEl) titleEl.textContent = translations[lang].seo_title;
+            }
+            if (translations[lang].seo_description) {
+                const metaDesc = document.getElementById('meta-description');
+                if (metaDesc) metaDesc.setAttribute('content', translations[lang].seo_description);
+            }
+            
+            // Update html lang attribute
+            document.documentElement.lang = lang;
+            
             updateLangUI(lang);
             if(isLangMenuOpen) toggleLangMenu();
             
