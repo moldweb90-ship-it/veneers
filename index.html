@@ -135,6 +135,32 @@
         input:focus {
             box-shadow: 0 0 0 2px rgba(0, 243, 255, 0.3);
         }
+
+        @media (max-width: 768px) {
+            .pt-32 {
+                padding-top: 3rem;
+            }
+
+            .py-24 {
+                padding-top: 3rem;
+                padding-bottom: 4rem;
+            }
+
+            .mb-16 {
+                margin-bottom: 2rem;
+            }
+
+            .py-32 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+                --tw-space-y-reverse: 0;
+                margin-top: calc(0rem * calc(1 - var(--tw-space-y-reverse)));
+                margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+            }
+        }
     </style>
 </head>
 <body class="font-sans antialiased selection:bg-neon-blue selection:text-black relative">
@@ -245,7 +271,7 @@
                     </div>
                     <div>
                         <p class="text-[10px] text-gray-500 uppercase tracking-wider font-bold" data-i18n="float_card_label">Гарантия качества</p>
-                        <p class="font-display font-bold text-white text-lg">100% Результат</p>
+                        <p class="font-display font-bold text-white text-lg" data-i18n="result_100">100% Результат</p>
                     </div>
                 </div>
             </div>
@@ -886,8 +912,82 @@
                 <h2 class="text-2xl md:text-4xl font-display font-bold mb-4">ЖИВЕШЬ НЕ В КИШИНЕВЕ?</h2>
                 <p class="text-gray-400 mb-8">Не нужно ехать на консультацию. Просто скинь фото своей улыбки в мессенджер, и врач скажет примерную стоимость и план лечения.</p>
                 <div class="flex justify-center gap-4">
-                    <a href="https://t.me/ivaskodoina" target="_blank" class="bg-[#229ED9] text-white px-8 py-3 rounded-full font-bold hover:bg-[#229ED9]/80 transition-all flex items-center gap-2"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                    <a href="https://t.me/+37379606303" target="_blank" class="bg-[#229ED9] text-white px-8 py-3 rounded-full font-bold hover:bg-[#229ED9]/80 transition-all flex items-center gap-2"><i class="fa-brands fa-telegram"></i> Telegram</a>
                     <a href="https://wa.me/37379606303" target="_blank" class="bg-[#25D366] text-white px-8 py-3 rounded-full font-bold hover:bg-[#25D366]/80 transition-all flex items-center gap-2"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOINA SECTION -->
+    <section class="py-24 relative overflow-hidden bg-gradient-to-b from-[#080808] to-[#050505]">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(0,243,255,0.03),transparent_50%)] pointer-events-none"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="reveal">
+                <div class="text-center mb-4">
+                    <span class="inline-block text-neon-blue text-xs font-bold tracking-[0.3em] uppercase mb-6" data-i18n="doina_label">Эксперт</span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-display font-black text-center mb-16 leading-tight">
+                    <span class="text-white" data-i18n="doina_name">Дойна Иваско</span><br>
+                    <span class="text-neon-blue" data-i18n="doina_title">#1 В ДЕНТАЛЬНОМ ТУРИЗМЕ МОЛДОВЫ</span>
+                </h2>
+            </div>
+            
+            <div class="reveal delay-100">
+                <div class="bg-gradient-to-br from-[#0a0a0a] via-[#111] to-[#0a0a0a] rounded-[3rem] p-10 md:p-16 border border-white/10 relative overflow-hidden group hover:border-neon-blue/30 transition-all duration-500">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-neon-blue/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-neon-blue/10 transition-all duration-500"></div>
+                    <div class="absolute bottom-0 left-0 w-96 h-96 bg-neon-blue/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 group-hover:bg-neon-blue/10 transition-all duration-500"></div>
+                    
+                    <div class="relative z-10 grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+                        <div class="space-y-8 order-2 md:order-1">
+                            <div class="hidden md:flex items-center mb-6">
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-neon-blue/20 to-neon-blue/5 flex items-center justify-center border-2 border-neon-blue/30">
+                                    <i class="fa-solid fa-crown text-2xl text-neon-blue"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-6 text-lg md:text-xl leading-relaxed">
+                                <p class="text-gray-300 font-light" data-i18n="doina_text_1">
+                                    Дойна Иваско — признанный лидер стоматологического туризма в Молдове, человек, который превратил мечты тысяч пациентов из Европы, США и других стран в реальность. За годы работы она создала безупречную систему, где каждая деталь продумана до мельчайших нюансов — от встречи в аэропорту до финального результата, который превосходит ожидания.
+                                </p>
+                                <p class="text-gray-300 font-light" data-i18n="doina_text_2">
+                                    Её подход к работе — это синтез профессионализма высочайшего уровня, личного внимания к каждому клиенту и глубокого понимания современных трендов в эстетической стоматологии. Дойна не просто организует поездку — она создаёт уникальный опыт, где качество лечения, комфорт пребывания и стоимость услуг гармонично сочетаются. Именно поэтому её выбирают те, кто ценит безупречность во всём.
+                                </p>
+                            </div>
+                            
+                            <div class="pt-8 border-t border-white/10 flex flex-wrap items-center gap-6 md:gap-8">
+                                <div class="text-center">
+                                    <div class="text-3xl md:text-4xl font-display font-black text-neon-blue mb-2">1000+</div>
+                                    <div class="text-xs text-gray-500 uppercase tracking-wider" data-i18n="doina_stat_1">Довольных пациентов</div>
+                                </div>
+                                <div class="w-px h-12 bg-white/10"></div>
+                                <div class="text-center">
+                                    <div class="text-3xl md:text-4xl font-display font-black text-neon-blue mb-2">15+</div>
+                                    <div class="text-xs text-gray-500 uppercase tracking-wider" data-i18n="doina_stat_2">Лет опыта</div>
+                                </div>
+                                <div class="w-px h-12 bg-white/10"></div>
+                                <div class="text-center">
+                                    <div class="text-3xl md:text-4xl font-display font-black text-neon-blue mb-2">50+</div>
+                                    <div class="text-xs text-gray-500 uppercase tracking-wider" data-i18n="doina_stat_3">Стран мира</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-1 md:order-2 flex justify-center flex-col">
+                            <div class="flex md:hidden items-center justify-center mb-6">
+                                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-neon-blue/20 to-neon-blue/5 flex items-center justify-center border-2 border-neon-blue/30">
+                                    <i class="fa-solid fa-crown text-2xl text-neon-blue"></i>
+                                </div>
+                            </div>
+                            <div class="rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl relative group/photo max-w-sm md:max-w-md">
+                                <img 
+                                    src="images/IMG_3262.jpg" 
+                                    alt="Doina Ivasko" 
+                                    class="w-full h-auto block object-cover"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -896,51 +996,40 @@
     <!-- CONTACTS -->
     <section id="contacts" class="pt-32 pb-12 border-t border-white/5 relative bg-[#080808]">
         <div class="container mx-auto px-6 relative z-10">
-            <div class="grid md:grid-cols-2 gap-16 mb-16">
+            <div class="mb-16">
                 <div class="reveal">
-                    <h2 class="text-4xl font-display font-bold mb-10" data-i18n="contact_title">КОНТАКТЫ</h2>
-                    <div class="space-y-8 text-lg">
-                        <div class="flex items-center gap-6 group">
-                            <div class="w-14 h-14 bg-[#111] rounded-full flex items-center justify-center text-neon-blue group-hover:bg-neon-blue group-hover:text-black transition-all duration-300">
+                    <h2 class="text-4xl font-display font-bold mb-8" data-i18n="contact_title">КОНТАКТЫ</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-[#111] rounded-full flex items-center justify-center text-neon-blue group-hover:bg-neon-blue group-hover:text-black transition-all duration-300 shrink-0">
                                 <i class="fa-solid fa-phone"></i>
                             </div>
-                            <a href="tel:+37379606303" class="hover:text-neon-blue font-bold text-2xl transition-colors font-display">+373 79 606 303</a>
+                            <a href="tel:+37379606303" class="hover:text-neon-blue font-bold text-xl transition-colors font-display">+373 79 606 303</a>
                         </div>
-                        <div class="flex items-center gap-6 group">
-                            <div class="w-14 h-14 bg-[#111] rounded-full flex items-center justify-center text-neon-blue group-hover:bg-neon-blue group-hover:text-black transition-all duration-300">
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-[#111] rounded-full flex items-center justify-center text-neon-blue group-hover:bg-neon-blue group-hover:text-black transition-all duration-300 shrink-0">
                                 <i class="fa-brands fa-telegram"></i>
                             </div>
-                            <a href="https://t.me/ivaskodoina" class="hover:text-neon-blue font-bold text-2xl transition-colors font-display">@ivaskodoina</a>
+                            <a href="https://t.me/ivaskodoina" class="hover:text-neon-blue font-bold text-xl transition-colors font-display">@ivaskodoina</a>
                         </div>
-                        <div class="flex items-center gap-6 group">
-                            <div class="w-14 h-14 bg-[#111] rounded-full flex items-center justify-center text-neon-blue group-hover:bg-neon-blue group-hover:text-black transition-all duration-300">
+                        <div class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 bg-[#111] rounded-full flex items-center justify-center text-neon-blue group-hover:bg-neon-blue group-hover:text-black transition-all duration-300 shrink-0">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <span class="block font-bold text-xl mb-1">Кишинев, Чеканы</span>
-                                <span class="text-gray-400 text-base">ул. Алеку Руссо 57/2</span>
+                                <span class="block font-bold text-lg">Кишинев, Чеканы</span>
+                                <span class="text-gray-400 text-sm">ул. Алеку Руссо 57/2</span>
                             </div>
                         </div>
-                        <div class="mt-12 p-8 bg-[#111] rounded-[2rem] border border-white/5">
-                            <h4 class="font-bold mb-6 text-white font-display text-sm tracking-widest uppercase" data-i18n="schedule_title">График работы:</h4>
-                            <ul class="space-y-3 text-base text-gray-400">
-                                <li class="flex justify-between border-b border-white/5 pb-3"><span>Пн - Пт:</span> <span class="text-white font-bold">07:00 - 21:00</span></li>
-                                <li class="flex justify-between border-b border-white/5 pb-3"><span>Суббота:</span> <span class="text-white font-bold">08:30 - 14:00</span></li>
-                                <li class="flex justify-between"><span>Воскресенье:</span> <span class="text-red-500 font-bold">Выходной</span></li>
-                            </ul>
+                    </div>
+                    <div class="p-6 bg-[#111] rounded-[2rem] border border-white/5">
+                        <h4 class="font-bold mb-4 text-white font-display text-sm tracking-widest uppercase" data-i18n="schedule_title">График работы:</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-base text-gray-400">
+                            <div class="flex justify-between"><span>Пн - Пт:</span> <span class="text-white font-bold">07:00 - 21:00</span></div>
+                            <div class="flex justify-between"><span>Суббота:</span> <span class="text-white font-bold">08:30 - 14:00</span></div>
+                            <div class="flex justify-between"><span>Воскресенье:</span> <span class="text-red-500 font-bold">Выходной</span></div>
                         </div>
                     </div>
-                </div>
-                <div class="h-[500px] rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl relative group reveal delay-200">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d808.3571110232263!2d28.88429961643988!3d47.04065489792294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97eae270996fd%3A0x823c24d9dea43c98!2zTGlmZSBEZW50YWwgQ2xpbmljIC0gQ9GC0L7QvNCw0YLQvtC70L7Qs9C40Y8g0JrQuNGI0LjQvdC10LIg0KfQtdC60LDQvdGL!5e0!3m2!1sru!2s!4v1765880500594!5m2!1sru!2s" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
                 </div>
             </div>
             <div class="text-center border-t border-white/5 pt-8 text-gray-600 text-xs tracking-widest uppercase">
@@ -1143,7 +1232,7 @@
                 hero_badge: "НАМ 1 ГОД НА ЧЕКАНАХ",
                 hero_h1_1: "ХВАТИТ", hero_h1_hide: "ПРЯТАТЬ", hero_h1_2: "УЛЫБКУ.",
                 hero_sub: "Ты живешь один раз. Сделай улыбку своим главным оружием. <span class='text-white font-medium'>Виниры по честной цене</span> в честь годовщины.",
-                hero_cta: "ХОЧУ ВИНИРЫ", hero_video: "Смотреть видео", float_card_label: "Гарантия качества",
+                hero_cta: "ХОЧУ ВИНИРЫ", hero_video: "Смотреть видео", float_card_label: "Гарантия качества", result_100: "100% Результат",
                 pain_title: "ЗАБУДЬ ПРО ЭТИ", pain_title_2: "ПРОБЛЕМЫ",
                 pain_1_title: "Стесняешься смеяться?", pain_1_text: "Прикрываешь рот рукой на фото? Желтизна и сколы больше не будут портить твою харизму.",
                 pain_2_title: "Надоели пломбы?", pain_2_text: "Постоянно переделываешь старые реставрации? Хватит сливать деньги. Сделай один раз и надолго.",
@@ -1173,6 +1262,10 @@
                 tour_feat2_title: "Проживание", tour_feat2_desc: "Бронь отеля или апартаментов под твой бюджет.",
                 tour_feat3_title: "Полное сопровождение", tour_feat3_desc: "Экскурсии, рестораны, комфорт 24/7.",
                 tour_manager: "Ваш персональный менеджер", tour_contact_btn: "Написать Дойне", tour_quote: "\"Я сделаю твой визит в Молдову незабываемым.\"",
+                doina_label: "Эксперт", doina_name: "Дойна Иваско", doina_title: "#1 В ДЕНТАЛЬНОМ ТУРИЗМЕ МОЛДОВЫ", 
+                doina_text_1: "Дойна Иваско - признанный лидер стоматологического туризма в Молдове, человек, который превратил мечты тысяч пациентов из Европы, США и других стран в реальность. За годы работы она создала безупречную систему, где каждая деталь продумана до мельчайших нюансов - от встречи в аэропорту до финального результата, который превосходит ожидания.",
+                doina_text_2: "Её подход к работе - это синтез профессионализма высочайшего уровня, личного внимания к каждому клиенту и глубокого понимания современных трендов в эстетической стоматологии. Дойна не просто организует поездку - она создаёт уникальный опыт, где качество лечения, комфорт пребывания и стоимость услуг гармонично сочетаются. Именно поэтому её выбирают те, кто ценит безупречность во всём.",
+                doina_stat_1: "Довольных пациентов", doina_stat_2: "Лет опыта", doina_stat_3: "Стран мира",
                 contact_title: "КОНТАКТЫ", schedule_title: "График работы:", modal_bonus: "🎁 Твой Бонус", modal_title: "ХОЧУ КРАСИВЫЕ ЗУБЫ", modal_sub: "Оставь заявку сейчас и получи 3D-примерку будущей улыбки (Mock-up) БЕСПЛАТНО.", modal_name_placeholder: "Как тебя зовут?", modal_phone_placeholder: "Номер телефона", modal_btn: "Отправить заявку", modal_privacy: "Мы не передаем данные 3-м лицам. Честно.",
                 rev_1: "\"Прилетел из Лондона. Сэкономил кучу денег, а качество топ. Дойна встретила в аэропорту, все организовала. Супер.\"",
                 rev_2: "\"Боялась пилить зубы. Сделали E-max без обточки. Теперь улыбаюсь постоянно. Спасибо врачам!\"",
@@ -1208,7 +1301,7 @@
                 hero_badge: "1 AN LA CIOCANA",
                 hero_h1_1: "NU-ȚI MAI", hero_h1_hide: "ASCUNDE", hero_h1_2: "ZÂMBETUL.",
                 hero_sub: "Trăiești o singură dată. Fă din zâmbetul tău arma ta principală. <span class='text-white font-medium'>Fațete la preț onest</span> în cinstea aniversării.",
-                hero_cta: "VREAU FAȚETE", hero_video: "Vezi video", float_card_label: "Garanția calității",
+                hero_cta: "VREAU FAȚETE", hero_video: "Vezi video", float_card_label: "Garanția calității", result_100: "100% Rezultat",
                 pain_title: "UITĂ DE ACESTE", pain_title_2: "PROBLEME",
                 pain_1_title: "Ți-e rușine să râzi?", pain_1_text: "Îți acoperi gura cu mâna în poze? Dinții galbeni și ciobiți nu îți vor mai strica carisma.",
                 pain_2_title: "Te-ai săturat de plombe?", pain_2_text: "Refaci constant restaurările vechi? Ajunge să arunci banii. Fă-o o dată și pentru mult timp.",
@@ -1238,6 +1331,10 @@
                 tour_feat2_title: "Cazare", tour_feat2_desc: "Rezervare hotel sau apartament conform bugetului tău.",
                 tour_feat3_title: "Asistență completă", tour_feat3_desc: "Excursii, restaurante, confort 24/7.",
                 tour_manager: "Managerul tău personal", tour_contact_btn: "Scrie-i Doinei", tour_quote: "\"Voi face ca vizita ta în Moldova să fie de neuitat.\"",
+                doina_label: "Expert", doina_name: "Doina Ivasko", doina_title: "#1 ÎN TURISMUL DENTAR AL MOLDOVEI",
+                doina_text_1: "Doina Ivasko este liderul recunoscut al turismului dentar din Moldova, persoana care a transformat visele a mii de pacienți din Europa, SUA și alte țări în realitate. De-a lungul anilor, ea a creat un sistem impecabil, unde fiecare detaliu este gândit până la cele mai mici nuanțe - de la întâmpinarea la aeroport până la rezultatul final care depășește așteptările.",
+                doina_text_2: "Abordarea ei față de muncă este sinteza profesionalismului la cel mai înalt nivel, atenției personale pentru fiecare client și a înțelegerii profunde a tendințelor moderne în stomatologia estetică. Doina nu organizează doar o călătorie - ea creează o experiență unică, unde calitatea tratamentului, confortul șederii și costul serviciilor se combină armonios. De aceea o aleg cei care apreciază impecabilitatea în tot.",
+                doina_stat_1: "Pacienți mulțumiți", doina_stat_2: "Ani experiență", doina_stat_3: "Țări din lume",
                 contact_title: "CONTACTE", schedule_title: "Program de lucru:", modal_bonus: "🎁 Bonusul Tău", modal_title: "VREAU DINTI FRUMOȘI", modal_sub: "Lasă o cerere acum și primește o probă 3D a viitorului zâmbet (Mock-up) GRATUIT.", modal_name_placeholder: "Cum te cheamă?", modal_phone_placeholder: "Număr de telefon", modal_btn: "Trimite cererea", modal_privacy: "Nu transmitem date către terți. Onest.",
                 rev_1: "\"Am zburat de la Londra. Am economisit o grămadă de bani, iar calitatea e de top. Doina m-a întâmpinat la aeroport, a organizat totul. Super.\"",
                 rev_2: "\"M-am temut să pilesc dinții. Au făcut E-max fără șlefuire. Acum zâmbesc mereu. Mulțumesc medicilor!\"",
@@ -1273,7 +1370,7 @@
                 hero_badge: "1 YEAR IN CIOCANA",
                 hero_h1_1: "STOP", hero_h1_hide: "HIDING", hero_h1_2: "YOUR SMILE.",
                 hero_sub: "You only live once. Make your smile your main weapon. <span class='text-white font-medium'>Veneers at an honest price</span> in honor of our anniversary.",
-                hero_cta: "I WANT VENEERS", hero_video: "Watch video", float_card_label: "Quality Guarantee",
+                hero_cta: "I WANT VENEERS", hero_video: "Watch video", float_card_label: "Quality Guarantee", result_100: "100% Result",
                 pain_title: "FORGET THESE", pain_title_2: "PROBLEMS",
                 pain_1_title: "Shy to laugh?", pain_1_text: "Covering your mouth in photos? Yellow and chipped teeth will no longer ruin your charisma.",
                 pain_2_title: "Tired of fillings?", pain_2_text: "Constantly redoing old restorations? Stop wasting money. Do it once and for a long time.",
@@ -1303,6 +1400,10 @@
                 tour_feat2_title: "Accommodation", tour_feat2_desc: "Hotel or apartment booking for your budget.",
                 tour_feat3_title: "Full Support", tour_feat3_desc: "Tours, restaurants, comfort 24/7.",
                 tour_manager: "Your Personal Manager", tour_contact_btn: "Message Doina", tour_quote: "\"I will make your visit to Moldova unforgettable.\"",
+                doina_label: "Expert", doina_name: "Doina Ivasko", doina_title: "#1 IN DENTAL TOURISM OF MOLDOVA",
+                doina_text_1: "Doina Ivasko is the recognized leader of dental tourism in Moldova, the person who has turned the dreams of thousands of patients from Europe, the USA, and other countries into reality. Over the years, she has created an impeccable system where every detail is thought through to the smallest nuances - from airport pickup to the final result that exceeds expectations.",
+                doina_text_2: "Her approach to work is a synthesis of the highest level of professionalism, personal attention to each client, and deep understanding of modern trends in aesthetic dentistry. Doina doesn't just organize a trip - she creates a unique experience where treatment quality, stay comfort, and service costs harmoniously combine. That's why she's chosen by those who value perfection in everything.",
+                doina_stat_1: "Satisfied Patients", doina_stat_2: "Years Experience", doina_stat_3: "Countries Worldwide",
                 contact_title: "CONTACTS", schedule_title: "Work Schedule:", modal_bonus: "🎁 Your Bonus", modal_title: "I WANT BEAUTIFUL TEETH", modal_sub: "Leave a request now and get a 3D mock-up of your future smile for FREE.", modal_name_placeholder: "What is your name?", modal_phone_placeholder: "Phone number", modal_btn: "Send Request", modal_privacy: "We do not transfer data to third parties. Honestly.",
                 rev_1: "\"Flew from London. Saved a ton of money, and quality is top. Doina met me at the airport, organized everything. Super.\"",
                 rev_2: "\"Was scared of grinding teeth. They did E-max with no grinding. Now I smile constantly. Thanks to doctors!\"",
