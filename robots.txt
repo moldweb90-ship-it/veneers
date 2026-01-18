@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://veneers.md/sitemap.xml
+
+# Disallow admin and API endpoints if needed
+Disallow: /api/
+
+# Allow all images and static files
+Allow: /images/
+Allow: /favicon_io/
+Allow: /video/
+Allow: /videoDOposle/
+Allow: /videorew/
