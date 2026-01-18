@@ -199,18 +199,25 @@
             box-shadow: 0 0 0 2px rgba(0, 243, 255, 0.3);
         }
 
-        @media (max-width: 768px) {
-            .min-h-screen {
-                min-height: 85vh;
+        @media screen and (max-width: 768px) {
+            section.min-h-screen,
+            .min-h-screen,
+            [class*="min-h-screen"] {
+                min-height: 85vh !important;
             }
 
-            .pb-12 {
-                padding-bottom: 0rem;
+            section.pb-12,
+            .pb-12,
+            div.pb-12,
+            [class*="pb-12"] {
+                padding-bottom: 0rem !important;
             }
 
-            .py-32 {
-                padding-top: 4rem;
-                padding-bottom: 0rem;
+            section.py-32,
+            .py-32,
+            [class*="py-32"] {
+                padding-top: 4rem !important;
+                padding-bottom: 0rem !important;
             }
 
             .pt-32 {
